@@ -83,6 +83,5 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
   * **host level features -** “number of failed login attempts”
 
 ### ATTACK TYPES TABLE:
-![Attack Types Table](https://user-images.githubusercontent.com/87608109/153062355-004a91fc-3967-4154-905c-3ba571629300.png)
 <img src="https://user-images.githubusercontent.com/87608109/153062355-004a91fc-3967-4154-905c-3ba571629300.png" alt="Attack Types Table" width="1000"/>
 
