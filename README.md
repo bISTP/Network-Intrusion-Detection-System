@@ -28,28 +28,32 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
 6. **Dst_bytes:** Number of data bytes transferred from destination to source in single connection 
 7. **Land:** if source and destination IP addresses and port numbers are equal then, this variable takes value 1 else 0 
 8. **Wrong_fragment:** Total number of wrong fragments in this connection 
-9. **Urgent:** Number of urgent packets in this connection. Urgent packets are packets with the urgent bit activated CONTENT RELATED FEATURES OF EACH NETWORK CONNECTION VECTOR 
-10. **Hot:** Number of „hot‟ indicators in the content such as: entering a system directory, creating programs and executing programs 
-11. **Num_failed _logins:** Count of failed login attempts 
-12. **Logged_in Login Status:** 1 if successfully logged in; 0 otherwise 
-13. **Num_compromised:** Number of "compromised" conditions 
-14. **Root_shell:** 1 if root shell is obtained; 0 otherwise 
-15. **Su_attempted:** 1 if "su root" command attempted or used; 0 otherwise 
-16. **Num_root:** Number of "root" accesses or number of operations performed as a root in the connection 
-17. **Num_file_creations:** Number of file creation operations in the connection 
-18. **Num_shells:** Number of shell prompts 19 Num_access_files: Number of operations on access control files 
+9. **Urgent:** Number of urgent packets in this connection. Urgent packets are packets with the urgent bit activated
+
+### CONTENT RELATED FEATURES OF EACH NETWORK CONNECTION VECTOR 
+11. **Hot:** Number of „hot‟ indicators in the content such as: entering a system directory, creating programs and executing programs 
+12. **Num_failed _logins:** Count of failed login attempts 
+13. **Logged_in Login Status:** 1 if successfully logged in; 0 otherwise 
+14. **Num_compromised:** Number of "compromised" conditions 
+15. **Root_shell:** 1 if root shell is obtained; 0 otherwise 
+16. **Su_attempted:** 1 if "su root" command attempted or used; 0 otherwise 
+17. **Num_root:** Number of "root" accesses or number of operations performed as a root in the connection 
+18. **Num_file_creations:** Number of file creation operations in the connection 
+19. **Num_shells:** Number of shell prompts 19 Num_access_files: Number of operations on access control files 
 20. **Num_outbound_cmds:** Number of outbound commands in an ftp session 
 21. **Is_hot_login:** 1 if the login belongs to the "hot" list i.e., root or admin; else 0 
-22. **Is_guest_login:** 1 if the login is a "guest" login; 0 otherwise TIME RELATED TRAFFIC FEATURES OF EACH NETWORK CONNECTION VECTOR 
-23. **Count:** Number of connections to the same destination host as the current connection in the past two seconds 
-24. **Srv_count:** Number of connections to the same service (port number) as the current connection in the past two seconds 
-25. **Serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count (23) 
-26. **Srv_serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in srv_count (24) 
-27. **Rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in count (23) 
-28. **Srv_rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in srv_count (24) 
-29. **Same_srv_rate:** The percentage of connections that were to the same service, among the connections aggregated in count (23) 
-30. **Diff_srv_rate:** The percentage of connections that were to different services, among the connections aggregated in count (23)
-31. **Srv_diff_host_rate:** The percentage of connections that were to different destination machines among the connections aggregated in srv_count (24) 
+22. **Is_guest_login:** 1 if the login is a "guest" login; 0 otherwise
+
+### TIME RELATED TRAFFIC FEATURES OF EACH NETWORK CONNECTION VECTOR 
+24. **Count:** Number of connections to the same destination host as the current connection in the past two seconds 
+25. **Srv_count:** Number of connections to the same service (port number) as the current connection in the past two seconds 
+26. **Serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count (23) 
+27. **Srv_serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in srv_count (24) 
+28. **Rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in count (23) 
+29. **Srv_rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in srv_count (24) 
+30. **Same_srv_rate:** The percentage of connections that were to the same service, among the connections aggregated in count (23) 
+31. **Diff_srv_rate:** The percentage of connections that were to different services, among the connections aggregated in count (23)
+32. **Srv_diff_host_rate:** The percentage of connections that were to different destination machines among the connections aggregated in srv_count (24) 
 
 ### HOST BASED TRAFFIC FEATURES IN A NETWORK CONNECTION VECTOR 
 32. **Dst_host_count:** Number of connections having the same destination host IP address 
@@ -70,10 +74,10 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
 ### ATTACK CLASS:
 1.  **DOS:** Denial of service is an attack category, which depletes the victim‟s resources thereby making it unable to handle legitimate requests – e.g. syn flooding. 
 * **Relevant features -** “source bytes” and “percentage of packets with errors”
-3.  **Probing:** Surveillance and other probing attack‟s objective is to gain information about the remote victim e.g. port scanning.
+2.  **Probing:** Surveillance and other probing attack‟s objective is to gain information about the remote victim e.g. port scanning.
 * **Relevant features -** “duration of connection” and “source bytes” 
-5.  **U2R:** unauthorized access to local super user (root) privileges is an attack type, by which an attacker uses a normal account to login into a victim system and tries to gain root/administrator privileges by exploiting some vulnerability in the victim e.g. buffer overflow attacks.
+3.  **U2R:** unauthorized access to local super user (root) privileges is an attack type, by which an attacker uses a normal account to login into a victim system and tries to gain root/administrator privileges by exploiting some vulnerability in the victim e.g. buffer overflow attacks.
 * **Relevant features -** “number of file creations” and “number of shell prompts invoked,” 
-7.  **R2L:** unauthorized access from a remote machine, the attacker intrudes into a remote machine and gains local access of the victim machine. E.g. password guessing.
+4.  **R2L:** unauthorized access from a remote machine, the attacker intrudes into a remote machine and gains local access of the victim machine. E.g. password guessing.
 * **Relevant features -** Network level features – “duration of connection” and “service requested” and
 * **host level features -** “number of failed login attempts”
