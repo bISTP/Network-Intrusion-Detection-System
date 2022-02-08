@@ -81,3 +81,7 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
 4.  **R2L:** unauthorized access from a remote machine, the attacker intrudes into a remote machine and gains local access of the victim machine. E.g. password guessing.
   * **Relevant features -** Network level features – “duration of connection” and “service requested” and
   * **host level features -** “number of failed login attempts”
+
+### ATTACK TYPES TABLE:
+![image](https://user-images.githubusercontent.com/87608109/153062355-004a91fc-3967-4154-905c-3ba571629300.png)
+
