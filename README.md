@@ -45,15 +45,15 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
 22. **Is_guest_login:** 1 if the login is a "guest" login; 0 otherwise
 
 ### TIME RELATED TRAFFIC FEATURES OF EACH NETWORK CONNECTION VECTOR 
-24. **Count:** Number of connections to the same destination host as the current connection in the past two seconds 
-25. **Srv_count:** Number of connections to the same service (port number) as the current connection in the past two seconds 
-26. **Serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count (23) 
-27. **Srv_serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in srv_count (24) 
-28. **Rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in count (23) 
-29. **Srv_rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in srv_count (24) 
-30. **Same_srv_rate:** The percentage of connections that were to the same service, among the connections aggregated in count (23) 
-31. **Diff_srv_rate:** The percentage of connections that were to different services, among the connections aggregated in count (23)
-32. **Srv_diff_host_rate:** The percentage of connections that were to different destination machines among the connections aggregated in srv_count (24) 
+23. **Count:** Number of connections to the same destination host as the current connection in the past two seconds 
+24. **Srv_count:** Number of connections to the same service (port number) as the current connection in the past two seconds 
+25. **Serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count (23) 
+26. **Srv_serror_rate:** The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in srv_count (24) 
+27. **Rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in count (23) 
+28. **Srv_rerror_rate:** The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in srv_count (24) 
+29. **Same_srv_rate:** The percentage of connections that were to the same service, among the connections aggregated in count (23) 
+30. **Diff_srv_rate:** The percentage of connections that were to different services, among the connections aggregated in count (23)
+31. **Srv_diff_host_rate:** The percentage of connections that were to different destination machines among the connections aggregated in srv_count (24) 
 
 ### HOST BASED TRAFFIC FEATURES IN A NETWORK CONNECTION VECTOR 
 32. **Dst_host_count:** Number of connections having the same destination host IP address 
@@ -73,11 +73,11 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
 
 ### ATTACK CLASS:
 1.  **DOS:** Denial of service is an attack category, which depletes the victim‟s resources thereby making it unable to handle legitimate requests – e.g. syn flooding. 
-* **Relevant features -** “source bytes” and “percentage of packets with errors”
+  * **Relevant features -** “source bytes” and “percentage of packets with errors”
 2.  **Probing:** Surveillance and other probing attack‟s objective is to gain information about the remote victim e.g. port scanning.
-* **Relevant features -** “duration of connection” and “source bytes” 
+  * **Relevant features -** “duration of connection” and “source bytes” 
 3.  **U2R:** unauthorized access to local super user (root) privileges is an attack type, by which an attacker uses a normal account to login into a victim system and tries to gain root/administrator privileges by exploiting some vulnerability in the victim e.g. buffer overflow attacks.
-* **Relevant features -** “number of file creations” and “number of shell prompts invoked,” 
+  * **Relevant features -** “number of file creations” and “number of shell prompts invoked,” 
 4.  **R2L:** unauthorized access from a remote machine, the attacker intrudes into a remote machine and gains local access of the victim machine. E.g. password guessing.
-* **Relevant features -** Network level features – “duration of connection” and “service requested” and
-* **host level features -** “number of failed login attempts”
+  * **Relevant features -** Network level features – “duration of connection” and “service requested” and
+  * **host level features -** “number of failed login attempts”
