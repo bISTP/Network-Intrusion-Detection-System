@@ -73,14 +73,14 @@ A Binary and Multi-Class Classification Problem solved with the help of many mac
 
 ### ATTACK CLASS:
 1.  **DOS:** Denial of service is an attack category, which depletes the victim‟s resources thereby making it unable to handle legitimate requests – e.g. syn flooding. 
-  * **Relevant features -** “source bytes” and “percentage of packets with errors”
+  * *Relevant features -* “source bytes” and “percentage of packets with errors”
 2.  **Probing:** Surveillance and other probing attack‟s objective is to gain information about the remote victim e.g. port scanning.
-  * **Relevant features -** “duration of connection” and “source bytes” 
+  * *Relevant features -* “duration of connection” and “source bytes” 
 3.  **U2R:** unauthorized access to local super user (root) privileges is an attack type, by which an attacker uses a normal account to login into a victim system and tries to gain root/administrator privileges by exploiting some vulnerability in the victim e.g. buffer overflow attacks.
-  * **Relevant features -** “number of file creations” and “number of shell prompts invoked,” 
+  * *Relevant features -* “number of file creations” and “number of shell prompts invoked,” 
 4.  **R2L:** unauthorized access from a remote machine, the attacker intrudes into a remote machine and gains local access of the victim machine. E.g. password guessing.
-  * **Relevant features -** Network level features – “duration of connection” and “service requested” and
-  * **host level features -** “number of failed login attempts”
+  * *Relevant features -* Network level features – “duration of connection” and “service requested” and
+  * *host level features -* “number of failed login attempts”
 
 ### ATTACK TYPES TABLE:
 <img src="https://user-images.githubusercontent.com/87608109/153062355-004a91fc-3967-4154-905c-3ba571629300.png" alt="Attack Types Table" width="1000"/>
